@@ -138,8 +138,6 @@
 // 52 is 200k thermistor - ATC Semitec 204GT-2 (1k pullup)
 // 55 is 100k thermistor - ATC Semitec 104GT-2 (Used in ParCan) (1k pullup)
 
-// 65 is B3 Innovations Pico 500c Thermistor
-
 #define TEMP_SENSOR_0 20
 #define TEMP_SENSOR_1 20
 #define TEMP_SENSOR_2 0
@@ -341,7 +339,7 @@ const bool Z_ENDSTOPS_INVERTING = true; // set to true to invert the logic of th
 #define X_MIN_POS 0
 #define Y_MAX_POS 220
 #define Y_MIN_POS 0
-#define Z_MAX_POS 210
+#define Z_MAX_POS 212
 #define Z_MIN_POS 0
 
 #define X_MAX_LENGTH (X_MAX_POS - X_MIN_POS)
@@ -384,7 +382,7 @@ const bool Z_ENDSTOPS_INVERTING = true; // set to true to invert the logic of th
 #define DEFAULT_EJERK                 1.0    // (mm/sec)
 
 //Length of the bowden tube. Used for the material load/unload procedure.
-#define FILAMANT_BOWDEN_LENGTH        0 //default 705
+#define FILAMANT_BOWDEN_LENGTH        50 //default 705
 
 //===========================================================================
 //=============================Additional Features===========================
