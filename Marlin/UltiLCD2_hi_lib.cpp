@@ -258,7 +258,7 @@ void lcd_menu_edit_setting()
         int_to_string(lcd_lib_encoder_pos, buffer, lcd_setting_postfix);
     lcd_lib_draw_string_center(30, buffer);
 
-    strcpy_P(buffer, PSTR("Prev: "));
+    //strcpy_P(buffer, PSTR("Prev: "));
     if (lcd_setting_type == 3)
         float_to_string(float(lcd_setting_start_value) / 100.0, buffer + 6, lcd_setting_postfix);
     else
