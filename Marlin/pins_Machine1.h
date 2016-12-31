@@ -1184,7 +1184,7 @@
 #define HEATER_0_PIN  2
 #define TEMP_0_PIN 8
 
-#define HEATER_1_PIN -1 //3
+#define HEATER_1_PIN -1//3
 #define TEMP_1_PIN 9
 
 #define HEATER_2_PIN -1
@@ -1202,7 +1202,7 @@
 #define SDSS               53
 #define MAX6675_SS         13
 #define LED_PIN            -1 //8
-#define FAN_PIN            8 //7
+#define FAN_PIN            7
 #define PS_ON_PIN          24
 #define KILL_PIN           -1
 #define SUICIDE_PIN        -1  //PIN that has to be turned on right after start, to keep power flowing.
