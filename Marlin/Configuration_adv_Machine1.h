@@ -336,7 +336,7 @@ const int8_t dropsegments=5; //everything with less than this number of steps wi
     #define FILAMENTCHANGE_YPOS 3
     #define FILAMENTCHANGE_ZADD 10
     #define FILAMENTCHANGE_FIRSTRETRACT -2
-    #define FILAMENTCHANGE_FINALRETRACT -100
+    #define FILAMENTCHANGE_FINALRETRACT -1
   #endif
 #endif
 

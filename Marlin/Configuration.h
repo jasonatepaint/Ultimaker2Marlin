@@ -12,7 +12,7 @@
 // build by the user have been successfully uploaded into firmware.
 #define STRING_VERSION_CONFIG_H __DATE__ " " __TIME__ // build date and time
 #ifndef STRING_CONFIG_H_AUTHOR
-#define STRING_CONFIG_H_AUTHOR "Tinker_17.03 DD #2" // Who made the changes.
+#define STRING_CONFIG_H_AUTHOR "Tinker_17.03 DD #1" // Who made the changes.
 #endif
 
 // SERIAL_PORT selects which serial port should be used for communication with the host.
@@ -174,7 +174,7 @@
 #ifndef HEATER_2_MAXTEMP
     #define HEATER_2_MAXTEMP 275
 #endif
-#define BED_MAXTEMP 100
+#define BED_MAXTEMP 200
 
 //Check if the heater heats up MAX_HEATING_TEMPERATURE_INCREASE within MAX_HEATING_CHECK_MILLIS while the PID was at the maximum.
 // If not, raise an error because most likely the heater is not heating up the temperature sensor. Indicating an issue in the system.
@@ -604,7 +604,7 @@ const bool Z_ENDSTOPS_INVERTING = true; // set to true to invert the logic of th
 
 
 // Configuration of behaviors at the start and end of prints
-#define END_OF_PRINT_RETRACTION 1.5		// number of mm to retract when printer goes idle
+#define END_OF_PRINT_RETRACTION 0		// number of mm to retract when printer goes idle
 #define END_OF_PRINT_RECOVERY_SPEED 5 	// speed to recover that assumed retraction at (mm/s)
 #define PRIMING_MM3	50					// number of mm^3 of plastic to extrude when priming
 										// (Ultimaker 2 hot end capacity is approx 80 mm^3)

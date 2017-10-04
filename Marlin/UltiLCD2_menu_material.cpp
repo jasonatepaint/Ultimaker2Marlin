@@ -1031,7 +1031,7 @@ void lcd_material_reset_defaults()
     eeprom_write_word(EEPROM_MATERIAL_BED_TEMPERATURE_OFFSET(0), 60);
     eeprom_write_byte(EEPROM_MATERIAL_FAN_SPEED_OFFSET(0), 100);
     eeprom_write_word(EEPROM_MATERIAL_FLOW_OFFSET(0), 100);
-    eeprom_write_float(EEPROM_MATERIAL_DIAMETER_OFFSET(0), 2.85);
+    eeprom_write_float(EEPROM_MATERIAL_DIAMETER_OFFSET(0), 1.75);
 
     eeprom_write_word(EEPROM_MATERIAL_EXTRA_TEMPERATURE_OFFSET(0, 0), 210);//0.4
     eeprom_write_word(EEPROM_MATERIAL_EXTRA_TEMPERATURE_OFFSET(0, 1), 195);//0.25
@@ -1048,7 +1048,7 @@ void lcd_material_reset_defaults()
     eeprom_write_word(EEPROM_MATERIAL_BED_TEMPERATURE_OFFSET(1), 90);
     eeprom_write_byte(EEPROM_MATERIAL_FAN_SPEED_OFFSET(1), 100);
     eeprom_write_word(EEPROM_MATERIAL_FLOW_OFFSET(1), 107);
-    eeprom_write_float(EEPROM_MATERIAL_DIAMETER_OFFSET(1), 2.85);
+    eeprom_write_float(EEPROM_MATERIAL_DIAMETER_OFFSET(1), 1.75);
 
     eeprom_write_word(EEPROM_MATERIAL_EXTRA_TEMPERATURE_OFFSET(1, 0), 255);//0.4
     eeprom_write_word(EEPROM_MATERIAL_EXTRA_TEMPERATURE_OFFSET(1, 1), 245);//0.25
@@ -1065,7 +1065,7 @@ void lcd_material_reset_defaults()
     eeprom_write_word(EEPROM_MATERIAL_BED_TEMPERATURE_OFFSET(2), 60);
     eeprom_write_byte(EEPROM_MATERIAL_FAN_SPEED_OFFSET(2), 50);
     eeprom_write_word(EEPROM_MATERIAL_FLOW_OFFSET(2), 100);
-    eeprom_write_float(EEPROM_MATERIAL_DIAMETER_OFFSET(2), 2.85);
+    eeprom_write_float(EEPROM_MATERIAL_DIAMETER_OFFSET(2), 1.75);
 
     eeprom_write_word(EEPROM_MATERIAL_EXTRA_TEMPERATURE_OFFSET(2, 0), 255);//0.4
     eeprom_write_word(EEPROM_MATERIAL_EXTRA_TEMPERATURE_OFFSET(2, 1), 245);//0.25
@@ -1277,7 +1277,7 @@ bool lcd_material_verify_material_settings()
         eeprom_write_word(EEPROM_MATERIAL_BED_TEMPERATURE_OFFSET(cnt), 60);
         eeprom_write_byte(EEPROM_MATERIAL_FAN_SPEED_OFFSET(cnt), 50);
         eeprom_write_word(EEPROM_MATERIAL_FLOW_OFFSET(cnt), 100);
-        eeprom_write_float(EEPROM_MATERIAL_DIAMETER_OFFSET(cnt), 2.85);
+        eeprom_write_float(EEPROM_MATERIAL_DIAMETER_OFFSET(cnt), 1.75);
         eeprom_write_word(EEPROM_MATERIAL_EXTRA_TEMPERATURE_OFFSET(cnt, 0), 255);//0.4
         eeprom_write_word(EEPROM_MATERIAL_EXTRA_TEMPERATURE_OFFSET(cnt, 1), 245);//0.25
         eeprom_write_word(EEPROM_MATERIAL_EXTRA_TEMPERATURE_OFFSET(cnt, 2), 260);//0.6
