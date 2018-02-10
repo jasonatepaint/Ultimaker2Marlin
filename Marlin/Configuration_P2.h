@@ -140,10 +140,18 @@
 // 52 is 200k thermistor - ATC Semitec 204GT-2 (1k pullup)
 // 55 is 100k thermistor - ATC Semitec 104GT-2 (Used in ParCan) (1k pullup)
 
-#define TEMP_SENSOR_0 20
-#define TEMP_SENSOR_1 20
-#define TEMP_SENSOR_2 0
-#define TEMP_SENSOR_BED 20
+#ifndef TEMP_SENSOR_0
+    #define TEMP_SENSOR_0 20
+#endif
+#ifndef TEMP_SENSOR_1
+    #define TEMP_SENSOR_1 20
+#endif
+#ifndef TEMP_SENSOR_2
+    #define TEMP_SENSOR_2 0
+#endif
+#ifndef TEMP_SENSOR_BED
+    #define TEMP_SENSOR_BED 20
+#endif
 
 // This makes temp sensor 1 a redundant sensor for sensor 0. If the temperatures difference between these sensors is to high the print will be aborted.
 //#define TEMP_SENSOR_1_AS_REDUNDANT
@@ -346,7 +354,7 @@ const bool Z_ENDSTOPS_INVERTING = true; // set to true to invert the logic of th
 #define INVERT_Y_DIR false    // for Mendel set to true, for Orca set to false
 #define INVERT_Z_DIR true     // for Mendel set to false, for Orca set to true
 #define INVERT_E0_DIR true   // for direct drive extruder v9 set to true, for geared extruder set to false
-#define INVERT_E1_DIR true    // for direct drive extruder v9 set to true, for geared extruder set to false
+#define INVERT_E1_DIR false    // for direct drive extruder v9 set to true, for geared extruder set to false
 #define INVERT_E2_DIR false   // for direct drive extruder v9 set to true, for geared extruder set to false
 
 // ENDSTOP SETTINGS:

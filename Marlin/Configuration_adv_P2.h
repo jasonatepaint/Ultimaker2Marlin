@@ -232,7 +232,7 @@
 // Babystepping enables the user to control the axis in tiny amounts, independently from the normal printing process
 // it can e.g. be used to change z-positions in the print startup phase in real-time
 // does not respect endstops!
-// #define BABYSTEPPING
+#define BABYSTEPPING
 #if defined(BABYSTEPPING)
   #define BABYSTEP_XY  //not only z, but also XY in the menu. more clutter, more functions
   #define BABYSTEP_INVERT_Z false  //true for inverse movements in Z
@@ -262,7 +262,7 @@
   #define EXTRUDER_ADVANCE_K .0
 
   #define D_FILAMENT 1.8
-  #define STEPS_MM_E 1200
+  #define STEPS_MM_E 418
   #define EXTRUTION_AREA (0.25 * D_FILAMENT * D_FILAMENT * 3.14159)
   #define STEPS_PER_CUBIC_MM_E (axis_steps_per_unit[E_AXIS]/ EXTRUTION_AREA)
 
