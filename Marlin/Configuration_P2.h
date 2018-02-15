@@ -398,7 +398,7 @@ const bool Z_ENDSTOPS_INVERTING = true; // set to true to invert the logic of th
 #else
 #define DEFAULT_AXIS_STEPS_PER_UNIT   {80.0,80.0,200,418}  // default steps per unit for ultimaker2
 #endif
-#define DEFAULT_MAX_FEEDRATE          {300, 300, 40, 45}    // (mm/sec)
+#define DEFAULT_MAX_FEEDRATE          {300, 300, 40, 65}    // (mm/sec)
 #define DEFAULT_MAX_ACCELERATION      {9000,9000,100,10000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for skeinforge 40+, for older versions raise them a lot.
 
 #define DEFAULT_ACCELERATION          3000    // X, Y, Z and E max acceleration in mm/s^2 for printing moves
@@ -434,11 +434,11 @@ const bool Z_ENDSTOPS_INVERTING = true; // set to true to invert the logic of th
 #define EEPROM_CHITCHAT
 
 // Preheat Constants
-#define PLA_PREHEAT_HOTEND_TEMP 180
+#define PLA_PREHEAT_HOTEND_TEMP 200
 #define PLA_PREHEAT_HPB_TEMP 70
 #define PLA_PREHEAT_FAN_SPEED 0     // Insert Value between 0 and 255
 
-#define ABS_PREHEAT_HOTEND_TEMP 240
+#define ABS_PREHEAT_HOTEND_TEMP 225
 #define ABS_PREHEAT_HPB_TEMP 100
 #define ABS_PREHEAT_FAN_SPEED 0     // Insert Value between 0 and 255
 
